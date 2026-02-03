@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Restaurante</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menuPrincipal" data-bs-offset="100">
+    <header>
+        <div class="container d-flex justify-content-between align-items-center py-4 ms-auto">
+            <h4 class="nome-restaurante text-light">Nome do restaurante</h4>
+            <nav class="nav nav-pills gap-2" id="menuPrincipal">
+                <a class="nav-link" href="#sobre-o-restaurante">Sobre o restaurante</a>
+                <a class="nav-link" href="#eventos">Eventos</a>
+                <a class="nav-link" href="#cardapio">Cardapio</a>
+                <a class="nav-link" href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="carrosselRestaurante" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselRestaurante" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carrosselRestaurante" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrosselRestaurante" data-bs-slide-to="2"></button>
+            </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./slide1.png" class="d-block w-100" alt="Prato principal" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold">Nossas Massas</h2>
+                <p>Receitas tradicionais feitas com amor.</p>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./slide2.png" class="d-block w-100" alt="Ambiente" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold">Ambiente Aconchegante</h2>
+                <p>O lugar perfeito para sua família.</p>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./slide3.png" class="d-block w-100" alt="Ambiente" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="fw-bold">Ambiente Aconchegante</h2>
+                <p>O lugar perfeito para sua família.</p>
+            </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselRestaurante" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselRestaurante" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+        <section class="secao-sobre-o-restaurante" id="sobre-o-restaurante">
+        <div class="container pt-5 pb-5 sobre-restaurante">
+            <div class="row w-100 d-flex">
+                <div class="col-lg-6">
+                    <img src="./restaurante.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h4>Sobre o <span>restaurante</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sit nesciunt, a reiciendis consequatur doloremque error suscipit libero eius numquam totam dolorum obcaecati illo saepe facilis quidem illum! Ut, non!</p>
+                    <h4>Sobre o <span>Espaço</span></h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, perspiciatis cupiditate eum praesentium labore, nobis, neque veritatis ullam autem corrupti voluptatum enim. Corporis inventore eius unde iste ab in molestias.</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="eventos">
+                <h4 class="text-center mt-5 mb-5">Para todas <span>as ocasiões</span></h4>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./aniversario.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title"><span>Aniversários</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sit quos, a dignissimos eaque nam eum reprehenderit hic asperiores in aliquid dolor pariatur ipsam nobis fugiat ut, ex doloremque? Eos?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./casamento.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title"><span>Recepção para casamentos</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sit quos, a dignissimos eaque nam eum reprehenderit hic asperiores in aliquid dolor pariatur ipsam nobis fugiat ut, ex doloremque? Eos?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./confraternizacoes.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title"><span>Confraternização</span></h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sit quos, a dignissimos eaque nam eum reprehenderit hic asperiores in aliquid dolor pariatur ipsam nobis fugiat ut, ex doloremque? Eos?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="cardapio">
+            <h4 class="text-center mt-5 mb-5">Nosso <span>cardápio</span></h4>
+            <div class="container mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-2">
+                        <nav class="nav nav-pills flex-column">
+                            <button class="nav-link text-start active" data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas" type="button">Bebidas não alcoólicas</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" type="button">Bebidas alcoólicas</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#entradas" type="button">Entradas</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#pratos-principais" type="button">Pratos principais</button>
+                            <button class="nav-link text-start" data-bs-toggle="tab" data-bs-target="#sobremesas" type="button">Sobremesas</button>
+                        </nav>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="bebidas-nao-alcoolicas">
+                                <div class="row bebidas justify-content-center">
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./coca-cola.jpg">
+                                        <h4>Coca-Cola</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./suco.jpg">
+                                        <h4>Suco de laranja</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./coca-cola.jpg">
+                                        <h4>Coca-Cola</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./suco.jpg">
+                                        <h4>Suco de laranja</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="row bebidas">
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./coca-cola.jpg">
+                                        <h4>Coca-Cola</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-lg-3 coluna-bebidas">
+                                        <img src="./suco.jpg">
+                                        <h4>Suco de laranja</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bebidas-alcoolicas">
+                                <p>Aqui entrará o conteúdo das bebidas alcoólicas.</p>
+                            </div>
+                            <div class="tab-pane fade" id="entradas">
+                                <p>Aqui entrará o conteúdo das entradas.</p>
+                            </div>
+                            <div class="tab-pane fade" id="pratos-principais">
+                                <p>Aqui entrará o conteúdo dos pratos principais.</p>
+                            </div>
+                            <div class="tab-pane fade" id="sobremesas">
+                                <p>Aqui entrará o conteúdo das sobremesas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h4 class="text-center mt-5 mb-5">Entre em <span>contato</span></h4>
+            <div class="container mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label"><span>Nome</span></label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"><span>Email</span></label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label"><span>Seu telefone (opcional)</span></label>
+                                <input type="number" class="form-control" id="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label"><span>Sua mensagem</span></label>
+                                <textarea class="form-control" id="mensagem" rows="3">
+
+                                </textarea>
+                            </div>
+                            <button type="submit" class="btn enviar">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <h4><span>Redes sociais</span></h4>
+                            <p>Imagens</p>
+                        </div>
+                        <div class="row">
+                            <h4><span>Endereço</span></h4>
+                            <p>Rua tal, 123 - Cidade - Estado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
